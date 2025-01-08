@@ -33,7 +33,7 @@ fs.readdir(folder, (err, files) => {
       console.log(`Question from ${file}:`, question);
       console.log(`Response:`, response);
       fs.mkdirSync('answers', { recursive: true })
-      let answer_path = `answers/${ans_file.replace('q','a')}`
+      let answer_path = `answers/${ans_file.replace('Q','A')}`
       console.log(`Answer path:`, answer_path)
       fs.appendFileSync(answer_path, response)
     });
